@@ -14,8 +14,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	
 	<!--Boostrap-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" 
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+		crossorigin="anonymous">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Font awesome-->
+  <link rel="stylesheet" 
+  		href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" 
+  		integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" 
+  		crossorigin="anonymous">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122607074-1"></script>
@@ -24,9 +34,7 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'UA-122607074-1');
-	</script>
-	
-	
+	</script>	
 
 	<script language='Javascript'>
 			function beginGame(){
@@ -36,13 +44,13 @@
 
 </head>
 <body onload="gameStarted()">
-	<header>Bursting Balloons</header>
+	<header class="fonts">Bursting Balloons</header>
 	<div class="container">
   		<div class="row mx-auto w-50">  
   			<div class="col ms">
   				<div class="box text-center">
   					<div class="card-body m-5">
-  						<h3 class="card-title gameLevel">Choose the level</h3>  						
+  						<h3 class="fonts card-title gameLevel">Choose the level</h3>  						
   						<select class="form-control" id="level-Game">
   							<option value="1">Easy</option>
   							<option value="2">Medium</option>
@@ -53,6 +61,53 @@
   				</div><!--card-->
   			</div>
   		</div>
-  	</div>		
+  	</div>
+  	<footer class="footer">
+	<div class="container-footer">
+		<div>
+			<p class="contact-me" >Got a question? Email me: 
+				<a class="text-light" 
+				   href="mailto : recofka@gmail.com ">&ensp; recofka@gmail.com
+				</a> 
+			</p>
+		</div>			
+
+		<div class="contact-icons" >
+			<a class="contactItem"  
+				href="https://www.linkedin.com/in/deniserecofka/" 
+				target="_blank" 
+				data-toggle="tooltip" 
+				data-placement="top" 
+				title="Take a look at my Linkedin">
+                <i class="fab fa-linkedin-in fa-3x"></i>
+            </a>
+
+			<a class="contactItem"
+				href="https://github.com/recofka/brustBalloons" 
+				target="_blank" 
+				data-toggle="tooltip" 
+				data-placement="top" 
+				title="Take a look in this project">
+                <i class="fab fa-github fa-3x"></i>
+            </a>
+
+            <a class="contactItem"
+            	href="https://twitter.com/drecofka" 
+            	target="_blank" 
+            	data-toggle="tooltip" 
+            	data-placement="top" 
+            	title="Follow me on Twitter">
+                <i class="fab fa-twitter fa-3x"></i>
+            </a>
+		</div> 
+	</div>	<!--div container-footer-->	
+
+		<div class="made-lamp">
+			<p class="madeby"> Made by Denise Recofka
+				<img src="img/star.svg" alt="">
+			</p>
+		</div>
+	</footer>
+
 </body>
 </html>
