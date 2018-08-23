@@ -96,6 +96,11 @@ background-color: #DCFBD2;
  }
  span{
  	color: black;
+}
+
+ .numScore{
+ 	display: flex;
+ 	margin-top: 100px;
  }
 
  .col-md-12{
@@ -115,6 +120,11 @@ background-color: #DCFBD2;
 .windBalloon{
 	margin: 5px;
 	width: 45px;
+}
+
+.windBalloon:hover{
+	transform:none;
+	transition: none;
 }
 
 }
