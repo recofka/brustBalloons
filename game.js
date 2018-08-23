@@ -20,7 +20,7 @@ function gameStarted (){
 	document.getElementById('time').innerHTML=time;
 
 	// number of ballons + call function to display ballons
-	var numBallons = 48;
+	var numBallons = 56;
 	var brustBalloons = 0;
 	createBalloons(numBallons);
 
@@ -59,8 +59,8 @@ function createBalloons(numballoons){
 	for(var i = 1; i <= numballoons; i++){
 			var balloon = document.createElement("img");
 			balloon.src = "img/balloon.svg";
-			balloon.style.width = '54px';	
-			balloon.style.margin = '10px';			
+			balloon.style.width = '48px';	
+			balloon.style.margin = '8px';			
 			balloon.id = 'b'+i;
 			balloon.className = 'windBalloon';
 			balloon.onclick = function(){brust(this);};
