@@ -89,9 +89,11 @@ span{
  
 /*--------------Footer coisarada --------------*/
  .footer{
-   background-color: #F44336;
-   opacity: 0.95;
-    margin-bottom: 0;
+ 	position:absolute;
+ 	bottom:0;
+ 	width:100%;
+ 	background-color: #F44336;
+ 	opacity: 0.95;    
 }
 
 /*div com todos os itens*/
@@ -237,9 +239,16 @@ span{
         color: #edf0c7;
      }
 
-     .footer{
-      margin: 0px ;
-      padding: 0px ;
+     .footer{      
+ 		bottom: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+ 	
+ 
+ 	background-color: #F44336;
+ 	opacity: 0.95;    
+
      }
 
     .container-footer{
