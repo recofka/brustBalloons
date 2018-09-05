@@ -52,8 +52,6 @@ function gaveOver(){
 	alert("End of the game!! booooom")
 }
 
-
-
 //This function inserts balloon as child to the div scenario
 function createBalloons(numballoons){
 	for(var i = 1; i <= numballoons; i++){
@@ -69,7 +67,6 @@ function createBalloons(numballoons){
 		}
 }
 
-
 // This function change the src of the to give a brust balloon after click
 function brust(e){
 	var idBalloon = e.id;
@@ -78,8 +75,6 @@ function brust(e){
 	popSound();
 	points(-1);	
 }
-
-
 
 //This function update de score after click
 function points(action){
@@ -112,7 +107,6 @@ function gameSituation(goodBalloons){
 
 function stopGame(){
 	clearTimeout(timerId);
-
 }
 
 
@@ -127,7 +121,6 @@ function removeEventBrust(){
 function popSound(){
 	var audioTag = new Audio();
 	audioTag.src = 'img/pop.wav';
-	audioTag.play();
-	
+	audioTag.play();	
 }
 

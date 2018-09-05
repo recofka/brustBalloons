@@ -88,63 +88,56 @@ span{
 
  
 /*--------------Footer coisarada --------------*/
- .footer{
- 	position:absolute;
- 	bottom:0;
- 	width:100%;
- 	background-color: #F44336;
- 	opacity: 0.95;    
+ 
+/*--------------Footer coisarada --------------*/
+footer{
+  background-color: #F44336;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  margin: 0px;   
 }
 
-/*div com todos os itens*/
-.container-footer{
+/*-Display Name + icons sidebyside-*/
+.footContainer{
   display: flex;
-  justify-content: space-around;
-  vertical-align: middle;
+  justify-content: center; 
+  width:100%;
+}
+/*-colors Name + icons-*/
+.contactItem, .madeby{
+  color: #fff;
+}
+/**/
+.contact-icons{
+  margin: 5px; 
 }
 
 .contactItem{
-    padding: 20px;   
-    transition: transform 0.2s; 
-   }
-
-.contactItem:hover{
-	color: #F0E68C;
-	transform: scale(1.2);
-	transition: transform 0.2s;
+  padding-right: 5px;
+  text-decoration: none; 
 }
 
-.contact-me{
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 35px;
- 
-}
-.contact-icons {
-  display: flex;
-  justify-content: flex-end;  
-}
 
-.contactItem, .contact-me a, .contact-me, .madeby{
-  color: #fff; 
-}
-/*  --------------Made by --------------*/
+/*  -------------- made by + star  --------------*/
 .madeby { 
-  display: block;
+  display: flex;
   font-size: 0.9em;
-  text-align: center;
-  margin: 0px;
+  margin: 5px;
+  margin-right:400px; 
+  margin-left:450px;
 }
 
-.made-lamp img {
+.made-star img {
   width: 15px;
   height: 15px;
+  margin: 2px;
   color:#ffd700;
   border-color: #ffd700;
-  animation: lamp 3s linear infinite;
+  animation: star 3s linear infinite;
 }
 
-@keyframes lamp {
+@keyframes star {
     0%   {transform: rotate(0deg);}
     10%  {transform: rotate(35deg);}
     20%  {transform: rotate(72deg);}
@@ -234,26 +227,15 @@ span{
 		transition: none;
 	}
 
-	/*  --------------Footer coisarada --------------*/
+	/*  --------------Footer --------------*/
     footer a, p{      
         color: #edf0c7;
      }
 
-     .footer{      
+     footer{      
  		bottom: 0;
-        position: fixed;
-        width: 100%;
-        text-align: center;
- 	
- 
- 	background-color: #F44336;
- 	opacity: 0.95;    
-
-     }
-
-    .container-footer{
-      display: block;     
-    }
+        position: fixed;          
+     }    
 
     .contact-me{
       display: flex;
@@ -264,6 +246,12 @@ span{
       font-size: 20px;
      }
 
-	
+     .madeby { 
+     	display: flex; 
+     	justify-content: center;    	
+     	margin-right:5px;
+     	margin-left:5px;
+     	margin-top: 9px;
+     }
 
 }
